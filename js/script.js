@@ -2,6 +2,14 @@ const input = document.getElementById('link-input')
 const linkForm = document.getElementById('link-form')
 const errMsg = document.getElementById('err-msg')
 
+const btn = document.querySelector('#menu-btn')
+const menu = document.querySelector('#menu')
+
+btn.addEventListener('click', () => {
+    btn.classList.toggle('open')
+    menu.classList.toggle('hidden')
+})
+
 function validURL(str) {
     var pattern = new RegExp(
         '^(https?:\\/\\/)?' + // protocol

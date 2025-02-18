@@ -15,9 +15,9 @@
     </head>
     <body>
         <!-- Nav Container -->
-        <nav class="relative container mx-auto p-6">
+        <nav class="relative container max-w-6xl mx-auto p-6">
             <!-- Flex Container For All Items -->
-            <div class="flex items-center justify-between">
+            <div class="relative flex items-center justify-between">
                 <!-- Flex Container For Logo/Menu -->
                 <div class="flex items-center space-x-20">
                     <!-- Logo -->
@@ -36,19 +36,33 @@
                     <a href="#" class="px-8 py-3 bg-cyan rounded-full text-white hover:opacity-70">Sign Up</a>
                 </div>
 
-                <!-- todo: hamburger menu -->
+                <!-- hamburger button -->
+                <button id="menu-btn" type="button" class="block hamburger focus:outline-none lg:hidden">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
             </div>
-            <!-- todo: mobile menu -->
+            <!-- mobile menu -->
+            <div id="menu" class="hidden absolute bg-darkViolet p-6 rounded-lg left-6 right-6 top-20 z-200">
+                <div class="flex flex-col items-center font-bold text-white space-y-5">
+                    <a href="#" class="w-full text-center">Features</a>
+                    <a href="#" class="w-full text-center">Pricing</a>
+                    <a href="#" class="w-full text-center">Resources</a>
+                    <a href="#" class="w-full text-center pt-6 border-t border-gray-400">Login</a>
+                    <a href="#" class="w-full text-center py-2 bg-cyan rounded-full">Sign Up</a>
+                </div>
+            </div>
         </nav>
 
         <!-- Hero Section -->
         <section id="hero">
             <!-- Hero Container -->
-            <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+            <div class="container max-w-6xl flex flex-col-reverse mx-auto p-6 lg:flex-row">
                 <!-- Conten Container -->
                 <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
-                    <h1 class="text-5xl font-bold text-center lg:text-6xl lg:text-left">More than just shorter links</h1>
-                    <p class="text-2xl text-gray-400 text-center lg:text-left">
+                    <h1 class="text-5xl font-bold text-center lg:text-6xl lg:text-left md:max-w-md">More than just shorter links</h1>
+                    <p class="text-2xl text-gray-400 text-center lg:text-left md:max-w-md">
                         Build your brand's recognition and get detailed insights on how your links are performing.
                     </p>
                     <div class="mx-auto lg:mx-0">
